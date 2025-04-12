@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
-        run: echo "Hello this is the first workflow"
+        run: |
+          echo "Hello this is the first workflow"
+          echo "Running multiple echo at once"
       - name: Print goodbye
         run: echo "Done - bye !!"
